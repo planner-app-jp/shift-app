@@ -1,4 +1,4 @@
-const CACHE = 'shift-app-v95';
+const CACHE = 'shift-app-v96';
 const FILES = ['./index.html', './manifest.json'];
 
 self.addEventListener('install', e => {
