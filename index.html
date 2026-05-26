@@ -33,10 +33,10 @@ header button{background:rgba(255,255,255,.25);border:1px solid rgba(255,255,255
 }
 /* スマホ縦向け：2段に綺麗に整列 */
 @media (max-width:600px){
-  /* ヘッダー：6ボタンを1行に */
-  header .actions{grid-template-columns:repeat(6,1fr)!important;gap:2px!important}
-  header button{padding:1px 2px!important;font-size:9px!important;min-height:24px!important}
-  .btn-header-undo{font-size:16px!important;min-width:auto!important}
+  /* ヘッダー：7ボタンを1行に */
+  header .actions{grid-template-columns:repeat(7,1fr)!important;gap:2px!important}
+  header button{padding:1px 1px!important;font-size:8px!important;min-height:22px!important;white-space:normal!important;word-break:keep-all!important;line-height:1.1!important}
+  .btn-header-undo{font-size:14px!important;min-width:auto!important;min-height:22px!important}
   /* ツールバー：grid で完全に2段に整列 */
   .quick-tools{
     display:grid!important;
@@ -314,7 +314,7 @@ body.app-locking #appLockScreen{visibility:visible!important}
   <div class="actions">
     <button class="btn-header-undo" onclick="app.undo()" id="headerUndoBtn" data-tip="一つ前の操作に戻る">↶</button>
     <button onclick="app.exportCSV()" data-tip="勤務表をCSVファイルに出力">CSV出力</button>
-    <button onclick="app.copyForSubmission()" data-tip="A/AJ/明休/休日に変換してクリップボードにコピー（Excelに値貼り付け）" style="background:#e65100;color:#fff">📋 提出用コピー</button>
+    <button onclick="app.copyForSubmission()" data-tip="A/AJ/明休/休日に変換してクリップボードにコピー（Excelに値貼り付け）" style="background:#e65100;color:#fff">📋提出用</button>
     <button onclick="app.showCalendarModal()" data-tip="個人の勤務をカレンダー形式でCSV出力(Googleカレンダーに勤務表示)">📅 カレンダー</button>
     <button onclick="app.backupData()" data-tip="全データをJSONファイルに保存">💾 バックアップ</button>
     <button onclick="document.getElementById('restoreFile').click()" data-tip="バックアップJSONを読み込んで復元">📥 復元</button>
